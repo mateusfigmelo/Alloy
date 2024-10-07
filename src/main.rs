@@ -7,6 +7,7 @@ mod interact_with_abi;
 mod interact_with_contract_instance;
 mod math_operations;
 mod math_utilities;
+mod handling_unknown_return_types;
 
 fn main() {
     comparison::main();
@@ -18,4 +19,5 @@ fn main() {
     let _ = deploy_from_bytecode::main();
     let _ = interact_with_abi::main();
     let _ = interact_with_contract_instance::main();
+    let _ = handling_unknown_return_types::main();
 }
