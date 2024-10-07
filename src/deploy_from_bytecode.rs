@@ -1,6 +1,6 @@
 use alloy::{
     hex,
-    network::{ReceiptResponse, TransactionBuilder},
+    network::TransactionBuilder,
     primitives::U256,
     providers::{Provider, ProviderBuilder},
     rpc::types::TransactionRequest,
@@ -9,7 +9,7 @@ use alloy::{
 use eyre::Result;
 
 sol! {
-    #[allow(missing_doces)]
+    #[allow(missing_docs)]
     #[sol(rpc)]
     contract Counter{
         uint256 public number;
