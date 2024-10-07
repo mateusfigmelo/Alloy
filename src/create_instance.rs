@@ -1,5 +1,5 @@
 use alloy::primitives::{
-    utils::{parse_units, ParseUnits},
+    utils::parse_units,
     U256,
 };
 
