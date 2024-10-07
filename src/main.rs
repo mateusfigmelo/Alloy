@@ -4,6 +4,7 @@ mod create_instance;
 mod deploy_from_artifacts;
 mod deploy_from_bytecode;
 mod interact_with_abi;
+mod interact_with_contract_instance;
 mod math_operations;
 mod math_utilities;
 
@@ -16,4 +17,5 @@ fn main() {
     let _ = deploy_from_artifacts::main();
     let _ = deploy_from_bytecode::main();
     let _ = interact_with_abi::main();
+    let _ = interact_with_contract_instance::main();
 }

@@ -9,6 +9,7 @@ dependencies = [
  "alloy",
  "eyre",
  "futures-util",
+ "serde_json",
  "tokio",
 ]
 
