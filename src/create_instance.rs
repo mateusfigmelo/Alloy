@@ -1,7 +1,4 @@
-use alloy::primitives::{
-    utils::parse_units,
-    U256,
-};
+use alloy::primitives::{utils::parse_units, U256};
 
 use eyre::Result;
 use std::str::FromStr;
