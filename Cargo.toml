@@ -4,7 +4,20 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-alloy = { version = "0.4.2", features = ["full"] }
+alloy = { version = "0.4.2", features = [
+    "full",
+    "node-bindings",
+    "rpc-types-debug",
+    "rpc-types-trace",
+    "json-rpc",
+    "rpc-client",
+    "signer-aws",
+    "signer-keystore",
+    "signer-ledger",
+    "signer-mnemonic",
+    "signer-trezor",
+    "signer-yubihsm",
+] }
 eyre = "0.6.12"
 futures-util = "0.3.31"
 tokio = { version = "1.40.0", features = ["full"] }
