@@ -10,8 +10,8 @@ use alloy::{
     rpc::types::TransactionRequest,
     transports::http::{Client, Http},
 };
-use serde_json;
 use eyre::Result;
+use serde_json;
 
 #[tokio::main]
 pub async fn main() -> Result<()> {
