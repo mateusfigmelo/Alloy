@@ -10,6 +10,7 @@ mod interact_with_contract_instance;
 mod math_operations;
 mod math_utilities;
 mod nonce_filler;
+mod recommended_filler;
 
 fn main() {
     comparison::main();
@@ -24,4 +25,5 @@ fn main() {
     let _ = handling_unknown_return_types::main();
     let _ = gas_filler::main();
     let _ = nonce_filler::main();
+    let _ = recommended_filler::main();
 }
