@@ -7,6 +7,7 @@ mod gas_filler;
 mod handling_unknown_return_types;
 mod interact_with_abi;
 mod interact_with_contract_instance;
+mod logging_layer;
 mod math_operations;
 mod math_utilities;
 mod nonce_filler;
@@ -28,4 +29,5 @@ fn main() {
     let _ = nonce_filler::main();
     let _ = recommended_filler::main();
     let _ = wallet_filler::main();
+    let _ = logging_layer::main();
 }
