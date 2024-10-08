@@ -11,6 +11,7 @@ mod math_operations;
 mod math_utilities;
 mod nonce_filler;
 mod recommended_filler;
+mod wallet_filler;
 
 fn main() {
     comparison::main();
@@ -26,4 +27,5 @@ fn main() {
     let _ = gas_filler::main();
     let _ = nonce_filler::main();
     let _ = recommended_filler::main();
+    let _ = wallet_filler::main();
 }
