@@ -8,6 +8,7 @@ use eyre::Result;
 
 #[tokio::main]
 pub async fn main() -> Result<()> {
+    println!("*********testing recommended filler*********");
     let provider = ProviderBuilder::new()
         .with_recommended_fillers()
         .on_anvil_with_wallet();

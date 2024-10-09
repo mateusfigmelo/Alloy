@@ -15,6 +15,7 @@ use serde_json;
 
 #[tokio::main]
 pub async fn main() -> Result<()> {
+    println!("*********testing interact with contract instances*********");
     // Spin up a local Anvil node.
     // Ensure `anvil` is available in $PATH.
     let provider = ProviderBuilder::new()

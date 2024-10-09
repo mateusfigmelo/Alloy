@@ -14,6 +14,7 @@ sol!(
 
 #[tokio::main]
 pub async fn main() -> Result<()> {
+    println!("*********testing deploy contract from artifact*********");
     // Spin up a local Anvil node.
     // Ensure `anvil` is available in $PATH.
     let provider = ProviderBuilder::new()

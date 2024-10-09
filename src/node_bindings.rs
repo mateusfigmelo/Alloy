@@ -18,6 +18,7 @@ pub(crate) mod deploy_contract_on_local_anvil_instance {
 
     #[tokio::main]
     pub async fn main() -> Result<()> {
+        println!("*********testing deploy contract on local anvil instance*********");
         let provider = ProviderBuilder::new()
             .with_recommended_fillers()
             .on_anvil_with_wallet();
@@ -49,6 +50,7 @@ pub(crate) mod anvil_fork_instance {
 
     #[tokio::main]
     pub async fn main() -> Result<()> {
+        println!("*********testing anvil fork instance*********");
         let rpc_url = "https://eth.merkle.io";
         let anvil = Anvil::new().fork(rpc_url).try_spawn()?;
         let provider = ProviderBuilder::new()
@@ -69,6 +71,7 @@ pub(crate) mod anvil_fork_provider {
     use eyre::Result;
     #[tokio::main]
     pub async fn main() -> Result<()> {
+        println!("*********testing anvil fork provider*********");
         let rpc_url = "https://eth.merkle.io";
         let provider = ProviderBuilder::new()
             .with_recommended_fillers()
@@ -90,6 +93,7 @@ pub(crate) mod anvil_local_instance {
 
     #[tokio::main]
     pub async fn main() -> Result<()> {
+        println!("*********testing anvil local instance*********");
         let anvil = Anvil::new().block_time(1).chain_id(1337).try_spawn()?;
         let provider = ProviderBuilder::new()
             .with_recommended_fillers()
@@ -108,6 +112,7 @@ pub(crate) mod anvil_local_provider {
 
     #[tokio::main]
     pub async fn main() -> Result<()> {
+        println!("*********testing anvil local provider*********");
         let provider = ProviderBuilder::new()
             .with_recommended_fillers()
             .on_anvil_with_config(|anvil| anvil.block_time(1).chain_id(1337));
@@ -128,6 +133,7 @@ pub(crate) mod geth_local_instance {
 
     #[tokio::main]
     pub async fn main() -> Result<()> {
+        println!("*********testing geth local instance*********");
         let geth = Geth::new()
             .chain_id(1337)
             .port(8545_u16)

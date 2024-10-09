@@ -14,6 +14,7 @@ use eyre::Result;
 
 #[tokio::main]
 pub async fn main() -> Result<()> {
+    println!("*********testing handling unknown return errors*********");
     // Spin up a local Anvil node.
     // Ensure `anvil` is available in $PATH.
     let provider = ProviderBuilder::new()

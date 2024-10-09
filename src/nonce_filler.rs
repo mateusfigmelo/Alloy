@@ -8,6 +8,7 @@ use eyre::Result;
 
 #[tokio::main]
 pub async fn main() -> Result<()> {
+    println!("*********testing nonce filler*********");
     let provider = ProviderBuilder::new()
         .with_cached_nonce_management()
         .on_anvil_with_wallet();

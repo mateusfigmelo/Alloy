@@ -12,6 +12,7 @@ mod math_operations;
 mod math_utilities;
 mod node_bindings;
 mod nonce_filler;
+mod provider;
 mod recommended_filler;
 mod wallet_filler;
 
@@ -37,4 +38,6 @@ fn main() {
     let _ = node_bindings::anvil_local_instance::main();
     let _ = node_bindings::anvil_local_provider::main();
     let _ = node_bindings::geth_local_instance::main();
+    let _ = provider::builder::main();
+    let _ = provider::builtin::main();
 }

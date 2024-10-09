@@ -8,6 +8,7 @@ use eyre::Result;
 
 #[tokio::main]
 pub async fn main() -> Result<()> {
+    println!("*********testing gas filler*********");
     let provider = ProviderBuilder::new()
         .with_gas_estimation()
         .on_anvil_with_wallet();

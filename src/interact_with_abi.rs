@@ -13,6 +13,7 @@ sol!(
 
 #[tokio::main]
 pub async fn main() -> Result<()> {
+    println!("*********testing interact with ABI*********");
     // Spin up a forked Anvil node.
     // Ensure `anvil` is available in $PATH.
     let rpc_url = "https://eth.merkle.io";

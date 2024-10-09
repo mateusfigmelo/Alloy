@@ -3,6 +3,7 @@ use eyre::Result;
 use std::ops::{Div, Mul};
 
 pub fn main() -> Result<()> {
+    println!("*********testing math operations*********");
     let a = U256::from(10);
     let b = U256::from(2);
 

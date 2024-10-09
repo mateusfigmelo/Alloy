@@ -5,6 +5,7 @@ use alloy::primitives::{
 use eyre::Result;
 
 pub fn main() -> Result<()> {
+    println!("*********testing math utilities*********");
     parse_units_example()?;
     format_units_example()?;
     Ok(())

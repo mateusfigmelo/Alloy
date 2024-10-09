@@ -24,6 +24,7 @@ sol! {
 
 #[tokio::main]
 pub async fn main() -> Result<()> {
+    println!("*********testing deploy contract from bytecode*********");
     let provider = ProviderBuilder::new()
         .with_recommended_fillers()
         .on_anvil_with_wallet();

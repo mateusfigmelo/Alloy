@@ -4,6 +4,7 @@ use eyre::Result;
 use std::str::FromStr;
 
 pub fn main() -> Result<()> {
+    println!("*********testing create instances*********");
     let a = U256::from_str("42")?;
     assert_eq!(a, U256::from(42));
 

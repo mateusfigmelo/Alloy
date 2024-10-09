@@ -56,6 +56,7 @@ where
 
 #[tokio::main]
 pub async fn main() -> Result<()> {
+    println!("*********testing logging layer*********");
     let anvil = Anvil::new().spawn();
     let rpc_url = anvil.endpoint_url();
     let client = ClientBuilder::default().layer(LoggingLayer).http(rpc_url);

@@ -10,6 +10,7 @@ use eyre::Result;
 
 #[tokio::main]
 pub async fn main() -> Result<()> {
+    println!("*********testing walllet fillers*********");
     let anvil = Anvil::new().try_spawn()?;
 
     let signer: PrivateKeySigner = anvil.keys()[0].clone().into();

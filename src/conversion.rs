@@ -2,6 +2,7 @@ use alloy::primitives::{utils::format_units, U256};
 use eyre::Result;
 
 pub fn main() -> Result<()> {
+    println!("*********testing conversions*********");
     let num = U256::from(42_u8);
 
     let a: u128 = num.to::<u128>();
