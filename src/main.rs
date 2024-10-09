@@ -12,9 +12,10 @@
 // mod math_utilities;
 // mod node_bindings;
 // mod nonce_filler;
-mod provider;
+// mod provider;
 // mod recommended_filler;
-//mod wallet_filler;
+// mod wallet_filler;
+mod query;
 
 fn main() {
     // comparison::main();
@@ -38,8 +39,10 @@ fn main() {
     // let _ = node_bindings::anvil_local_instance::main();
     // let _ = node_bindings::anvil_local_provider::main();
     // let _ = node_bindings::geth_local_instance::main();
-    let _ = provider::builder::main();
-    let _ = provider::builtin::main();
-    let _ = provider::http::main();
-    let _ = provider::ws::main();
+    // let _ = provider::builder::main();
+    // let _ = provider::builtin::main();
+    // let _ = provider::http::main();
+    // let _ = provider::ws::main();
+    let _ = query::contract_storage::main();
+    let _ = query::query_logs::main();
 }
