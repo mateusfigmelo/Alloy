@@ -10,6 +10,7 @@ mod interact_with_contract_instance;
 mod logging_layer;
 mod math_operations;
 mod math_utilities;
+mod node_bindings;
 mod nonce_filler;
 mod recommended_filler;
 mod wallet_filler;
@@ -30,4 +31,10 @@ fn main() {
     let _ = recommended_filler::main();
     let _ = wallet_filler::main();
     let _ = logging_layer::main();
+    let _ = node_bindings::deploy_contract_on_local_anvil_instance::main();
+    let _ = node_bindings::anvil_fork_instance::main();
+    let _ = node_bindings::anvil_fork_provider::main();
+    let _ = node_bindings::anvil_local_instance::main();
+    let _ = node_bindings::anvil_local_provider::main();
+    let _ = node_bindings::geth_local_instance::main();
 }
