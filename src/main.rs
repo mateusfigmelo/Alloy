@@ -48,4 +48,5 @@ fn main() {
     // let _ = query::query_logs::main();
     let _ = transactions::decode_input::main();
     let _ = transactions::encode_decode_eip1559::main();
+    let _ = transactions::gas_price_usd::main();
 }
