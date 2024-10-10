@@ -47,4 +47,5 @@ fn main() {
     // let _ = query::contract_storage::main();
     // let _ = query::query_logs::main();
     let _ = transactions::decode_input::main();
+    let _ = transactions::encode_decode_eip1559::main();
 }
