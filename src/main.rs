@@ -15,7 +15,8 @@
 // mod provider;
 // mod recommended_filler;
 // mod wallet_filler;
-mod query;
+//mod query;
+mod transactions;
 
 fn main() {
     // comparison::main();
@@ -43,6 +44,7 @@ fn main() {
     // let _ = provider::builtin::main();
     // let _ = provider::http::main();
     // let _ = provider::ws::main();
-    let _ = query::contract_storage::main();
-    let _ = query::query_logs::main();
+    // let _ = query::contract_storage::main();
+    // let _ = query::query_logs::main();
+    let _ = transactions::decode_input::main();
 }
