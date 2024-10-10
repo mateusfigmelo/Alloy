@@ -49,4 +49,5 @@ fn main() {
     let _ = transactions::decode_input::main();
     let _ = transactions::encode_decode_eip1559::main();
     let _ = transactions::gas_price_usd::main();
+    let _ = transactions::send_raw_transaction::main();
 }
